@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
     "baseUrl": "./src",
     "target": "esnext",
     "outDir": "./dist",
@@ -17,13 +16,13 @@
       "@app/*": ["app/*"],
       "@dtos/*": ["dtos/*"],
       "@repositories/*": ["repositories/*"],
-      "@utils/*": ["utils/*"],
-      "rollup/parseAst": ["./empty.d.ts"]
+      "@utils/*": ["utils/*"]
     },
     "jsx": "react-jsx",
+    "esModuleInterop": true,
     "lib": ["esnext", "dom"],
     "types": ["vitest/globals"]
   },
-  "include": ["src", "test", "cypress", "src/empty.d.ts"],
+  "include": ["src", "test", "cypress"],
   "exclude": ["node_modules", "dist", "test", "cypress", "**/*.spec.tsx"]
 }
