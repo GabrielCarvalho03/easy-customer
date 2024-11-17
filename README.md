@@ -8,11 +8,10 @@ O projeto `customers-microfrontend` é um microfrontend desenvolvido com React e
 
 ## Funcionalidades
 
-- Visualização de clientes
-- Criação de um novo clientes
-- Edição de um clientes
-- Remoção de um clientes
-- Paginação de clientes
+- Visualização de cliente
+- Edição de um cliente
+- Remoção de um cliente
+- Paginação de cliente
 - Integração com API externa
 
 ## Tecnologias Utilizadas
