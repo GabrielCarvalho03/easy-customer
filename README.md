@@ -51,19 +51,23 @@ Antes de começar, certifique-se de ter o Node.js e o npm (ou yarn) instalados n
 ## Configuração
 
 1. Crie um arquivo .env.local na raiz do projeto e adicione a URL base da API:
+
       ```sh
    VITE_BASE_URL=https://sua-api-url.com
 
 ## Uso
 
 1. Para iniciar o projeto em modo de desenvolvimento, execute:
+   
    ```sh
    npm run dev ou yarn dev
+   
 O projeto estará disponível em http://localhost:3000.
 
 ## Testes
 
 1. Para executar os testes, execute:
+   
    ```sh
    npm run test ou yarn test
 
