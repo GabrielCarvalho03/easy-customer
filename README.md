@@ -47,5 +47,43 @@ Antes de começar, certifique-se de ter o Node.js e o npm (ou yarn) instalados n
 3. Navegue até o diretório do projeto:
 
    ```sh
-   npm install # ou yarn install
+   npm install ou yarn install
 
+## Configuração
+
+1. Crie um arquivo .env.local na raiz do projeto e adicione a URL base da API:
+      ```sh
+   VITE_BASE_URL=https://sua-api-url.com
+
+## Uso
+
+1. Para iniciar o projeto em modo de desenvolvimento, execute:
+   ```sh
+   npm run dev ou yarn dev
+O projeto estará disponível em http://localhost:3000.
+
+## Testes
+
+1. Para executar os testes, execute:
+   ```sh
+   npm run test ou yarn test
+
+## Estrutura do Projeto
+
+customers-microfrontend/
+├── public/
+├── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── pages/
+│   ├── styles/
+│   ├── utils/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── ...
+├── .env.local
+├── .gitignore
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── ...
