@@ -34,7 +34,7 @@ Antes de começar, certifique-se de ter o Node.js e o npm (ou yarn) instalados n
 1. Clone o repositório:
 
    ```sh
-   [git clone https://github.com/seu-usuario/customers-microfrontend.git](https://github.com/GabrielCarvalho03/easy-customer.git) 
+   git clone https://github.com/seu-usuario/customers-microfrontend.git
 
 
 
