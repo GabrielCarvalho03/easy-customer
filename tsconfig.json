@@ -1,12 +1,28 @@
 {
   "compilerOptions": {
     "baseUrl": "./src",
+    "target": "esnext",
+    "outDir": "./dist",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
     "paths": {
       "@components/*": ["components/*"],
       "@styles/*": ["styles/*"],
-      "@pages/*": ["pages/*"]
+      "@pages/*": ["pages/*"],
+      "@assets/*": ["assets/*"],
+      "@api/*": ["api/*"],
+      "@hooks/*": ["hooks/*"],
+      "@app/*": ["app/*"],
+      "@dtos/*": ["dtos/*"],
+      "@repositories/*": ["repositories/*"],
+      "@utils/*": ["utils/*"]
     },
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "types": ["vitest/globals"]
   },
-  "include": ["src"]
+  "include": ["src", "test", "cypress"],
+  "exclude": ["node_modules", "dist", "test", "cypress", "**/*.spec.tsx"]
 }

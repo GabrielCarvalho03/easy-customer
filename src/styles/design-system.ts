@@ -9,6 +9,7 @@ export const DesignSystem: DesingSystem = {
     grayLight: {
       100: "#AAAAAA",
       200: "#D9D9D900",
+      500: "#363636",
     },
     danger: "#ff0000",
   },
@@ -17,6 +18,7 @@ export const DesignSystem: DesingSystem = {
   },
   borderWidht: {
     small: "1px",
+    base: "2px",
   },
 
   typography: {
@@ -58,6 +60,6 @@ export const DesignSystem: DesingSystem = {
   media: {
     mobile: "(max-width: 768px)",
     tablet: "(max-width: 1024px)",
-    desktop: "(min-width: 1024px)",
+    desktop: "(max-width: 1281px)",
   },
 };

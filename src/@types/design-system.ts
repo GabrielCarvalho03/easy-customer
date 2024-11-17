@@ -6,6 +6,7 @@ export interface DesingSystem {
     grayLight: {
       100: string;
       200: string;
+      500: string;
     };
     danger: string;
     base: string;
@@ -15,6 +16,7 @@ export interface DesingSystem {
   };
   borderWidht: {
     small: string;
+    base: string;
   };
 
   typography: {
