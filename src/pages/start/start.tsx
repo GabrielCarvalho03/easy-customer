@@ -28,7 +28,7 @@ export const Start = () => {
             {...register("name")}
             borderRadius="small"
             height="large"
-            placeholder="Digite seu e-mail"
+            placeholder="Digite seu nome"
             error={errors.name?.message}
           />
           <CustomButton

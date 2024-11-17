@@ -1,4 +1,4 @@
-import { fireEvent, getByTestId, render } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { Card } from "@components/card/card";
 import { CustomerDto } from "@dtos/customer/CustomerDto";

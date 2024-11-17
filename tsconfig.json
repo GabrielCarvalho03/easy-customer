@@ -3,8 +3,10 @@
     "esModuleInterop": true,
     "baseUrl": "./src",
     "target": "esnext",
+    "outDir": "./dist",
     "module": "esnext",
     "moduleResolution": "node",
+    "skipLibCheck": true,
     "paths": {
       "@components/*": ["components/*"],
       "@styles/*": ["styles/*"],
@@ -15,12 +17,13 @@
       "@app/*": ["app/*"],
       "@dtos/*": ["dtos/*"],
       "@repositories/*": ["repositories/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "rollup/parseAst": ["./empty.d.ts"]
     },
     "jsx": "react-jsx",
     "lib": ["esnext", "dom"],
     "types": ["vitest/globals"]
   },
-
-  "include": ["src", "test"]
+  "include": ["src", "test", "cypress", "src/empty.d.ts"],
+  "exclude": ["node_modules", "dist", "test", "cypress", "**/*.spec.tsx"]
 }

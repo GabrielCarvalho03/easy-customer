@@ -26,7 +26,7 @@ export const useCustomer = create<UseCustomerProps>((set) => ({
   dataCustomer: {} as CustomerDto,
   setDataCustomer: (value) => set({ dataCustomer: value }),
 
-  customers: {} as CustomerProps,
+  customers: { clients: [], totalPages: 0, currentPage: 0 } as CustomerProps,
   setCustomers: (value) => set({ customers: value }),
 
   createCustomer: async (data) => {

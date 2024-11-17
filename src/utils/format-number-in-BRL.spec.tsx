@@ -8,7 +8,7 @@ describe("#format-number-in-BRL", () => {
         /\u00A0/g,
         " "
       );
-      expect(formattedValue.toString()).toEqual("R$ 5.000,00");
+      expect(formattedValue.toString()).to.equal("R$ 5.000,00");
     });
 
     it("should format the number company valuation for BRL currency", () => {
@@ -17,7 +17,7 @@ describe("#format-number-in-BRL", () => {
         /\u00A0/g,
         " "
       );
-      expect(formattedValue.toString()).toEqual("R$ 100.000,00");
+      expect(formattedValue.toString()).to.equal("R$ 100.000,00");
     });
   });
 });

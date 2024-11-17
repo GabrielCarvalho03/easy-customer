@@ -32,7 +32,7 @@ export const Home = () => {
           <S.WapperLoading>{isLoading && <Loader size={30} />}</S.WapperLoading>
         )}
 
-        {customers.clients?.length > 0 && !isLoading && (
+        {customers?.clients?.length > 0 && !isLoading && (
           <>
             <S.Wapper>
               <S.BoxLenghtAndFilter>
@@ -47,7 +47,7 @@ export const Home = () => {
               </S.BoxLenghtAndFilter>
 
               <S.CardWapper>
-                {customers.clients?.map((item: CustomerDto) => (
+                {customers?.clients?.map((item: CustomerDto) => (
                   <Card item={item} />
                 ))}
               </S.CardWapper>

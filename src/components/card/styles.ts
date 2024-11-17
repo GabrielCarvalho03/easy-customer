@@ -37,6 +37,8 @@ export const WapperActions = styled.div`
 
 export const pointer = styled.button`
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 `;
 
 export const WapperRemoveClientIcon = styled.div`
