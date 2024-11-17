@@ -1,6 +1,12 @@
 import { DesignSystem } from "@styles/design-system";
 import styled from "styled-components";
 
+export const Container = styled.main`
+  width: 100%;
+  position: relative;
+  background-color: red;
+`;
+
 export const ModalHeader = styled.div`
   width: 100%;
   display: flex;
