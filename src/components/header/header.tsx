@@ -34,7 +34,11 @@ export const Header = () => {
               Clientes selecionados
             </S.Text>
           </Pointer>
-          <Pointer onClick={() => navigate("/")}>
+          <Pointer
+            onClick={() =>
+              (window.location.href = "https://login-easy-customer.vercel.app/")
+            }
+          >
             <S.Text>Sair</S.Text>
           </Pointer>
         </S.MenuSection>
