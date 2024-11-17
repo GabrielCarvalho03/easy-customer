@@ -1,6 +1,6 @@
 # Customers Microfrontend
 
-(![image](https://github.com/user-attachments/assets/cce4da0f-9b42-4f27-97eb-9a9e72950f20)
+![image](https://github.com/user-attachments/assets/cce4da0f-9b42-4f27-97eb-9a9e72950f20)
 
 ## Descrição
 
