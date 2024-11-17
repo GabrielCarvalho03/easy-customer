@@ -68,22 +68,4 @@ O projeto estará disponível em http://localhost:3000.
    ```sh
    npm run test ou yarn test
 
-## Estrutura do Projeto
 
-customers-microfrontend/
-├── public/
-├── src/
-│   ├── components/
-│   ├── hooks/
-│   ├── pages/
-│   ├── styles/
-│   ├── utils/
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── ...
-├── .env.local
-├── .gitignore
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-└── ...
