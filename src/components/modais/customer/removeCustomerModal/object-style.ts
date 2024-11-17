@@ -6,7 +6,7 @@ export const stylesModalCustomer = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    minWidth: "25rem",
+    minWidth: window.innerWidth <= 480 ? "90%" : "25rem",
     minHeight: "9.25rem",
   },
   overlay: {
