@@ -41,7 +41,7 @@ Antes de começar, certifique-se de ter o Node.js e o npm (ou yarn) instalados n
 2. Navegue até o diretório do projeto:
 
    ```sh
-   cd customers-microfrontend
+   cd easy-customer
 
 3. Navegue até o diretório do projeto:
 
