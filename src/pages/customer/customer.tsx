@@ -1,13 +1,17 @@
 import { Card } from "@components/card/card";
 import * as S from "./styles";
 import { CustomButton } from "@components/customButton/button";
-
+import { useState } from "react";
 import { TextStrong } from "@styles/utils";
 import { useCustomer } from "@hooks/useCustomer/useCustomer";
+import { useFilter } from "@hooks/useFilter/useFilter";
 import { CustomerDto } from "@dtos/customer/CustomerDto";
+import { useParams } from "react-router-dom";
 
 export const Customer = () => {
   const { selectedCustomers, setSelectedCustomers } = useCustomer();
+  const { value } = useFilter();
+  const { userName } = useParams();
 
   return (
     <>
@@ -39,7 +43,6 @@ export const Customer = () => {
                 </CustomButton>
               </div>
             </S.Wapper>
-            <S.CustomPagination count={10} shape="rounded" />
           </>
         )}
 
@@ -47,7 +50,11 @@ export const Customer = () => {
           <S.NotSelected>
             <S.TextNotSelect>Nenhum cliente selecionado</S.TextNotSelect>
 
-            <S.WapperButtonNotSelected>
+            <S.WapperButtonNotSelected
+              onClick={() =>
+                (window.location.href = `/home/${userName}/clientes`)
+              }
+            >
               <CustomButton variant="filled" borderRadius="small" height="base">
                 <S.TitleButton>Selecione um cliente para editar</S.TitleButton>
               </CustomButton>
