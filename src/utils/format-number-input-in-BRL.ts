@@ -1,7 +1,7 @@
 export const formatToBRL = (value: string | number) => {
   const number =
     typeof value === "string"
-      ? parseFloat(value.replace(/[^\d]/g, "")) 
+      ? parseFloat(value.replace(/[^\d]/g, "")) / 100
       : value;
   if (isNaN(number)) return "";
   return new Intl.NumberFormat("pt-BR", {

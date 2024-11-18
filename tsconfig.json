@@ -21,7 +21,7 @@
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "types": ["vitest/globals"]
+    "types": ["vitest"]
   },
   "include": ["src", "test", "cypress"],
   "exclude": ["node_modules", "dist", "test", "cypress", "**/*.spec.tsx"]

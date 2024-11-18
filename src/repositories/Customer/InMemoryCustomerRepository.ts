@@ -15,8 +15,8 @@ export const InMemoryCustomerRepository: ICustomerRepository = {
     try {
       const response = await api.post("/users", {
         name: customer.name,
-        salary: customer.salary,
-        companyValuation: customer.companyValuation,
+        salary: customer.salary / 100,
+        companyValuation: customer.companyValuation / 100,
       });
       return response.data;
     } catch (error) {
@@ -28,8 +28,8 @@ export const InMemoryCustomerRepository: ICustomerRepository = {
     try {
       const response = await api.patch(`/users/${id}`, {
         name: customer.name,
-        salary: customer.salary,
-        companyValuation: customer.companyValuation,
+        salary: customer.salary / 100,
+        companyValuation: customer.companyValuation / 100,
       });
       return response.data;
     } catch (error) {

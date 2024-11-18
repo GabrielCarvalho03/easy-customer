@@ -8,7 +8,7 @@ describe("#format-number-input-in-BRL", () => {
         /\u00A0/g,
         " "
       );
-      expect(formattedValue.toString()).to.equal("R$ 5.000,00");
+      expect(formattedValue.toString()).toEqual("R$ 50,00");
     });
 
     it("should format the number company valuation for BRL currency when it is number", () => {
@@ -17,18 +17,18 @@ describe("#format-number-input-in-BRL", () => {
         /\u00A0/g,
         " "
       );
-      expect(formattedValue.toString()).to.equal("R$ 100.000,00");
+      expect(formattedValue.toString()).toEqual("R$ 100.000,00");
     });
   });
   it("should return value 'R$ 00,00' salary field is null", () => {
     const mockValueSalary = null;
     const formattedValue = formatToBRL(mockValueSalary).replace(/\u00A0/g, " ");
-    expect(formattedValue).to.equal("R$ 0,00");
+    expect(formattedValue).toEqual("R$ 0,00");
   });
 
   it("should return value 'R$ 00,00' company valuation field is null", () => {
     const mockValueSalary = null;
     const formattedValue = formatToBRL(mockValueSalary).replace(/\u00A0/g, " ");
-    expect(formattedValue).to.equal("R$ 0,00");
+    expect(formattedValue).toEqual("R$ 0,00");
   });
 });
