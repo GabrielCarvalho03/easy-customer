@@ -1,33 +1,4 @@
-# Customers Microfrontend
 
-![image](https://github.com/user-attachments/assets/cce4da0f-9b42-4f27-97eb-9a9e72950f20)
-
-## Descrição
-
-O projeto `customers-microfrontend` é um microfrontend desenvolvido com React e Vite. Ele permite a visualização e gerenciamento de clientes, incluindo funcionalidades de paginação.
-
-## Funcionalidades
-
-- Visualização de clientes
-- Edição de um cliente
-- Remoção de um cliente
-- Paginação de cliente
-- Integração com API externa
-
-## Tecnologias Utilizadas
-
-- React
-- Vite
-- TypeScript
-- Styled-components
-- Axios
-- React Hook Form
-- React Router DOM
-- Zustand
-
-## Pré-requisitos
-
-Antes de começar, certifique-se de ter o Node.js e o npm (ou yarn) instalados na sua máquina.
 
 ## Instalação
 
